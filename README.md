@@ -2,7 +2,7 @@
 
 A flexible **Node.js command-line AI assistant** that lets users chat with an LLM, analyse files, and switch between models — all from the terminal.
 
-Motivation: I have been wanting to develop a simple program utilising Generative AI and decided it would be useful to develop a simple program that allows the user to choose between ordinary natural language and 'file' mode that allows the user to analyse file and ask questions. I decided upon using Openrouter as it simplifies the process of providing a number of different LLM's that can be accessed from one API. Openrouter is a LLM API Gateway that provides a single source of entry for LLMs and for budgets to be easily monitored.
+**Motivation**: I have been wanting to develop a simple program utilising Generative AI and decided it would be useful to develop a simple program that can allow a user to choose between ordinary natural language and 'file' mode so as to analyse files and ask questions. I decided upon using Openrouter as it simplifies the process for providing a number of different LLM's that can be accessed via the one API. Openrouter is a LLM API Gateway that provides a single source of entry for LLMs and for budgets to be easily monitored.
 
 This project allows users to:
 
@@ -20,9 +20,7 @@ This application evolved from a simple CLI experiment into a more structured bac
 
 My intention is to further develop a user-centric AI tool that will allow the user to control variables such as temperature or latency and perform a range of agent driven tasks.
 
-The next version will be focused on addition of a backend node/express server with routers and controllers with backend database storage. The end goal will be to add a simple typescript frontend using vite/react that will allow the user to post questions to the llm including file upload analysis and that will persist state across sessions. There will be the ability to ask the agent to provide a set list of tasks.
-
-
+The next version will be focused on addition of a backend node/express server with routers and controllers and database storage. The end goal will be to add a simple typescript frontend that will allow the user to post questions to the llm including file upload analysis and that will persist state across sessions. There will be the ability to ask the agent to provide a set list of tasks.
 
 ## Features
 
