@@ -1,7 +1,7 @@
 require('dotenv').config();
 const chalk = require('chalk');
 const { formatResponse } = require('../utils/clean');
-const { loadFile, rl } = require('./cli_setup');
+const { loadFile, rl, checkApiKey } = require('./cli_setup');
 const safeExecute = require('../utils/safeExecute');
 const { askLLM } = require('../services/llm');
 const { loadSession, clearSession } = require('../services/sessionStore');
@@ -38,6 +38,7 @@ async function fileMode() {
 }
 
 (async function mainMenu() {
+  checkApiKey();
   const session = loadSession();
 
   if (session && session.messages) {
