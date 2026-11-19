@@ -1,4 +1,4 @@
-# Context CLI Assistant
+# AI Chat CLI Assistant
 
 A flexible **Node.js command-line AI assistant** that lets users chat with an LLM, analyse files, and switch between models — all from the terminal.
 
