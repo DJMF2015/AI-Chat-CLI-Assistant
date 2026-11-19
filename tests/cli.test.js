@@ -1,6 +1,6 @@
 jest.mock('dotenv', () => ({ config: jest.fn() }));
 jest.mock('chalk', () => new (jest.requireActual('chalk').Instance)({ level: 0 }));
-jest.mock('./cli_setup', () => ({
+jest.mock('../cli/cli_setup', () => ({
   checkApiKey: jest.fn(),
   loadFile: jest.fn(),
   rl: { question: jest.fn(), close: jest.fn() },
